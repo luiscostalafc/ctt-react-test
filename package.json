@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "docker:start": "docker-compose up",
