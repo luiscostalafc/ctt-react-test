@@ -10,8 +10,9 @@
     "test:watch": "jest --watch",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
+    "docker:start": "docker-compose up",
     "docker:up": "docker-compose up --build",
-    "docker:stop": "docker-compose down"
+    "docker:down": "docker-compose down"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,8 @@
   "devDependencies": {
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.3.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
     "clean-webpack-plugin": "4.0.0",
     "css-loader": "7.1.2",
     "cypress": "14.2.1",

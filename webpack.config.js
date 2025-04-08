@@ -12,10 +12,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
-    alias: {
-      "@components": path.resolve(__dirname, "src/components/"),
-      "@store": path.resolve(__dirname, "src/store/"),
-    },
   },
   devtool: "source-map", // Generates source maps to simplify debugging of the original code
   devServer: {
