@@ -1,9 +1,9 @@
 # CTT React Test
 
 <div align="center">
-  <img src="https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react" alt="React Badge" />
-  <img src="https://img.shields.io/badge/Redux-4.2.1-purple?style=for-the-badge&logo=redux" alt="Redux Badge" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript" alt="TypeScript Badge" />
+  <img src="https://img.shields.io/badge/React-19.1.0-blue?style=for-the-badge&logo=react" alt="React Badge" />
+  <img src="https://img.shields.io/badge/Redux-5.0.1-purple?style=for-the-badge&logo=redux" alt="Redux Badge" />
+  <img src="https://img.shields.io/badge/TypeScript-5.8.3-blue?style=for-the-badge&logo=typescript" alt="TypeScript Badge" />
   <img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=for-the-badge&logo=github" alt="CI Badge" />
 </div>
 
@@ -43,9 +43,10 @@ This project is a **Single-Page Application (SPA)** that allows you to view and 
 
 1. Make sure you have **Docker** and **Docker Compose** installed.
 2. Run the following command in your terminal:
-   ```bash
-   npm run docker:up
-   ```
+
+```bash
+npm run docker:up
+```
 
 ### Without Docker
 
