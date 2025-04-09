@@ -8,9 +8,7 @@
     "build": "webpack --mode production",
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
+    "test:coverage": "jest --coverage",
     "docker:start": "docker-compose up",
     "docker:up": "docker-compose up --build",
     "docker:down": "docker-compose down"
@@ -41,7 +39,6 @@
     "@types/react-dom": "^19.1.1",
     "clean-webpack-plugin": "4.0.0",
     "css-loader": "7.1.2",
-    "cypress": "14.2.1",
     "html-webpack-plugin": "5.6.3",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
