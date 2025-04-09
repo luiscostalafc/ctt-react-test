@@ -28,7 +28,7 @@ module.exports = {
         exclude: /node_modules/, // Excludes node_modules to improve build performance
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"], // Uses style-loader to inject CSS into the DOM and css-loader to interpret CSS imports
       },
     ],

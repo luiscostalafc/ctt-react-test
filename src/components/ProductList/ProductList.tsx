@@ -10,6 +10,8 @@ import {
 import { useProductDispatch } from "../../hooks/useProductDispatch";
 import { Product } from "../../store/products/types";
 
+import "./productList.css";
+
 export const ProductList = () => {
   const dispatch = useProductDispatch();
   const { items, loading, error } = useSelector(
@@ -91,9 +93,9 @@ export const ProductList = () => {
   }
 
   return (
-    <div>
-      <h2>Products</h2>
-      <table border={1} cellPadding={5} cellSpacing={0}>
+    <div className="productListContainer">
+      <h2 className="productListHeading">Products</h2>
+      <table className="productTable">
         <thead>
           <tr>
             <th>Description</th>
@@ -140,7 +142,7 @@ export const ProductList = () => {
                       onChange={handleChangeProduct}
                     />
                   </td>
-                  <td>
+                  <td className="productActions">
                     <button onClick={handleEditProduct}>Save</button>
                     <button onClick={handleCancelEditProduct}>Cancel</button>
                   </td>
@@ -151,7 +153,7 @@ export const ProductList = () => {
                   <td>${product.price}</td>
                   <td>{product.stock}</td>
                   <td>{product.categories.join(", ")}</td>
-                  <td>
+                  <td className="productActions">
                     <button onClick={() => handleEditClick(product)}>
                       Edit
                     </button>

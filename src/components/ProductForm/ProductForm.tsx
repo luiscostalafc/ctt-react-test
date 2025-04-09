@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useProductDispatch } from "../../hooks/useProductDispatch";
 import { createProduct } from "../../store/products/actions";
 
+import "./productForm.css";
+
 export const ProductForm = () => {
   const dispatch = useProductDispatch();
   const [description, setDescription] = useState("");
@@ -35,9 +37,9 @@ export const ProductForm = () => {
   };
 
   return (
-    <form onSubmit={handleCreate}>
-      <h2>Add Product</h2>
-      <div>
+    <form onSubmit={handleCreate} className="formContainer">
+      <h2 className="formHeader">Add Product</h2>
+      <div className="formGroup">
         <label htmlFor="description">Description:</label>
         <input
           id="description"
@@ -47,7 +49,7 @@ export const ProductForm = () => {
           required
         />
       </div>
-      <div>
+      <div className="formGroup">
         <label htmlFor="price">Price:</label>
         <input
           id="price"
@@ -57,7 +59,7 @@ export const ProductForm = () => {
           required
         />
       </div>
-      <div>
+      <div className="formGroup">
         <label htmlFor="stock">Stock:</label>
         <input
           id="stock"
@@ -67,7 +69,7 @@ export const ProductForm = () => {
           required
         />
       </div>
-      <div>
+      <div className="formGroup">
         <label htmlFor="categories">Categories (comma separated):</label>
         <input
           id="categories"
@@ -77,7 +79,9 @@ export const ProductForm = () => {
           required
         />
       </div>
-      <button type="submit">Add Product</button>
+      <button type="submit" className="submitButton">
+        Add Product
+      </button>
     </form>
   );
 };
